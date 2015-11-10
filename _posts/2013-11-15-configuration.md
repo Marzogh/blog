@@ -1,5 +1,6 @@
 ---
 layout: post
+author: Marzogh
 title: Configuration
 categories: [general, setup, demo]
 tags: [demo, dbyll, dbtek, setup]
