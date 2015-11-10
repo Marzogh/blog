@@ -6,7 +6,7 @@ exclude: ["README.md"] # files to exclude
 highlighter: pygments
 markdown: kramdown
 disqus: chipsncode
-google_analytics: dbyll
+google_analytics:
 
 defaults:
   -
@@ -21,7 +21,6 @@ description: Pushing the boundaries of what I can do, one line of code & one wir
 source_link:
 favicon:
 touch_icon:
-google_analytics_key:
 
 author:
   name: Marzogh
