@@ -1,4 +1,4 @@
-# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+# visit http://jekyllrb.com/docs/frontmatter/ for more settings
 
 paginate: 10 # pagination based on number of posts
 paginate_path: "page:num"
@@ -14,8 +14,15 @@ defaults:
       path: "" # empty string for all files
     values:
       title: Chips'nCode Blog
+      keywords: electronics, code, arduino, raspberry pi, SPIFlash, flash, memory, winbond, open source, DIY, maker, hacker
+### content configuration ###
 
-description: Stylish Jekyll Theme
+description: Pushing the boundaries of what I can do, one line of code & one wire at a time
+source_link:
+favicon:
+touch_icon:
+google_analytics_key:
+
 author:
   name: Marzogh
   email: marzogh@icloud.com
