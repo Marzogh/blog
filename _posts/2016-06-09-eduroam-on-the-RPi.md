@@ -31,7 +31,7 @@ If you are not comfortable working with nano, just replace the word nano in the 
 
  - Add the following section to the bottom of your wpa_supplicant.conf file
 
-{% highlight yaml %}
+``` conf
 network={
     # --- USER CONFIGURATION - YOU NEED TO SET THIS UP --
 
@@ -94,7 +94,7 @@ network={
     # Use PMKSA caching
     proactive_key_caching=1
 }
-{% endhighlight %}
+```
 
 <h4> Getting a CA certificate </h4>
  - You should be able to get this from your university - just ask your IT department. For those of you from UQ, get the certificate here (Right click and Save Link As'): <a class="btn btn-default" href="https://db.tt/gOeycxoK">UQ CA cert</a>
