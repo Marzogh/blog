@@ -98,7 +98,8 @@ network={
 
 <h4> Getting a CA certificate </h4>
  - You should be able to get this from your university - just ask your IT department. For those of you from UQ, get the certificate here (Right click and Save Link As'): <a class="btn btn-default" href="https://db.tt/gOeycxoK">UQ CA cert</a>
- - Move the certificate that you just downloaded to /etc/ssl/certs/ by entering the following commands in terminal. (DO NOT RENAME THE FILE!)
+ - Move the certificate that you just downloaded to /etc/ssl/certs/ by entering the following command in terminal. (DO NOT RENAME THE FILE!)
+ - 
 ``` shell
 sudo mv ~/Downloads/uq-net-ca.pem /etc/ssl/certs/uq-net-ca.pem
 ```
