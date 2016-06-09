@@ -33,66 +33,66 @@ If you are not comfortable working with nano, just replace the word nano in the 
 
 {% highlight yaml %}
 network={
-	# --- USER CONFIGURATION - YOU NEED TO SET THIS UP --
+    # --- USER CONFIGURATION - YOU NEED TO SET THIS UP --
 
-	# The 'identity' is your username used for authentication.
-	# Some universities do not use the "@uni.domain.edu" at the end of their username, UQ does.
-	# If you are unable to connect to WiFi when it is set up without the domain, try including it
-        identity="abcde1@uq.edu.au"
+    # The 'identity' is your username used for authentication.
+    # Some universities do not use the "@uni.domain.edu" at the end of their username, UQ does.
+    # If you are unable to connect to WiFi when it is set up without the domain, try including it
+    identity="abcde1@uq.edu.au"
 
-	# Your normal university password (Make sure the permissions on
-	# your wpa_supplicant.conf file are not set to publicly readable!!)
-        password="12345"
+    # Your normal university password (Make sure the permissions on
+    # your wpa_supplicant.conf file are not set to publicly readable!!)
+    password="12345"
 
-	# You need a CA certificate. (Refer to the section just after this block of text for details)
+    # You need a CA certificate. (Refer to the section just after this block of text for details)
     ca_cert="/etc/ssl/certs/uq-net-ca.pem"
 
-	# -- ONLY CHANGE THE TEXT BELOW IF YOU KNOW YOUR UNIVERSITY --
-	# -- USES DIFFERENT SETTINGS. IF LEFT AS IS, THESE SETTINGS --
-	# -- SUPPORT MOST UNIVERSITIES - THESE SETTINGS ARE TESTED  --
-	# -- TO WORK WITH THE UNIVERSITY OF QUEENSLAND, AUSTRALIA   --
+    # -- ONLY CHANGE THE TEXT BELOW IF YOU KNOW YOUR UNIVERSITY --
+    # -- USES DIFFERENT SETTINGS. IF LEFT AS IS, THESE SETTINGS --
+    # -- SUPPORT MOST UNIVERSITIES - THESE SETTINGS ARE TESTED  --
+    # -- TO WORK WITH THE UNIVERSITY OF QUEENSLAND, AUSTRALIA   --
 	
-        eap=PEAP TTLS
+    eap=PEAP TTLS
 
-	# The 'anonymous_identity' is the identity used for routing
-	# the authentication to UQ. It must end with '@uq.edu.au' and 
-	# must be all lowercase. If you have anything preceding the @
-	# it must be all lowercase letters or a hyphen (no spaces
-	# or any other punctuation).
-	# e.g. "wireless-user@uq.edu.au" would be ok
-        anonymous_identity="anonymous@uq.edu.au"
+    # The 'anonymous_identity' is the identity used for routing
+    # the authentication to UQ. It must end with '@uq.edu.au' and 
+    # must be all lowercase. If you have anything preceding the @
+    # it must be all lowercase letters or a hyphen (no spaces
+    # or any other punctuation).
+    # e.g. "wireless-user@uq.edu.au" would be ok
+    anonymous_identity="anonymous@uq.edu.au"
 
-	# UQ uses MS-CHAPv2 as the inner authentication scheme,
-	# with the common label
-	phase1="peaplabel=0"
-	phase2="auth=MSCHAPV2"
+    # UQ uses MS-CHAPv2 as the inner authentication scheme,
+    # with the common label
+    phase1="peaplabel=0"
+    phase2="auth=MSCHAPV2"
 
-	# Set priority to a big number
-	priority=777
+    # Set priority to a big number
+    priority=777
 
-	# --- DO NOT CHANGE ANY OF THE TEXT BELOW THIS LINE --
+    # --- DO NOT CHANGE ANY OF THE TEXT BELOW THIS LINE --
 
-	# Enable this section
-	disabled=0
-	# look for a network named 'eduroam'
-        ssid="eduroam"
-	# SSID will be broadcast, so no need to scan.
-	scan_ssid=0
-	# Infrastructure mode
-	mode=0
-	# WPA/WPA2 require OPEN
-	auth_alg=OPEN
-	# WPA and WPA2 (RSN) are both used for eduroam 
-	# (at the moment) In the future 'WPA' will be deprecated
-	# and can be removed (this will make the eduroam network WPA2 only).	
-	proto=WPA RSN
-	# CCMP (AES) is stronger, but some organisations use TKIP.
-	# In the future TKIP will be dprecated and 'TKIP' can be removed.
-	pairwise=CCMP TKIP
-	# Use EAP
-      key_mgmt=WPA-EAP
-	# Use PMKSA caching
-      proactive_key_caching=1
+    # Enable this section
+    disabled=0
+    # Look for a network named 'eduroam'
+    ssid="eduroam"
+    # SSID will be broadcast, so no need to scan.
+    scan_ssid=0
+    # Infrastructure mode
+    mode=0
+    # WPA/WPA2 require OPEN
+    auth_alg=OPEN
+    # WPA and WPA2 (RSN) are both used for eduroam 
+    # (at the moment) In the future 'WPA' will be deprecated
+    # and can be removed (this will make the eduroam network WPA2 only).	
+    proto=WPA RSN
+    # CCMP (AES) is stronger, but some organisations use TKIP.
+    # In the future TKIP will be dprecated and 'TKIP' can be removed.
+    pairwise=CCMP TKIP
+    # Use EAP
+    key_mgmt=WPA-EAP
+    # Use PMKSA caching
+    proactive_key_caching=1
 }
 {% endhighlight %}
 
