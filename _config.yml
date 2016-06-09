@@ -10,6 +10,10 @@ markdown: kramdown
 disqus: chipsncode
 google_analytics:
 
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 defaults:
   -
     scope:
