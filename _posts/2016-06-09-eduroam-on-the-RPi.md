@@ -18,15 +18,15 @@ P.S. This is not for those of you who are not comfortable with the command line 
 <h3> Disable the network service </h3>
 Type the following into terminal
 
-{% highlight yaml %}
+``` shell
 sudo service networking stop
-{% endhighlight %}
+```
 
 <h3> Configure your wpa_supplicant file </h3>
  - In terminal type the following command
-{% highlight yaml %}
+``` shell
 sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
-{% endhighlight %}
+```
 If you are not comfortable working with nano, just replace the word nano in the previous command with leafpad - that should make it easy for those of you who are used to having a friendly GUI around.
 
  - Add the following section to the bottom of your wpa_supplicant.conf file
@@ -99,13 +99,13 @@ network={
 <h4> Getting a CA certificate </h4>
  - You should be able to get this from your university - just ask your IT department. For those of you from UQ, get the certificate here (Right click and Save Link As'): <a class="btn btn-default" href="https://db.tt/gOeycxoK">UQ CA cert</a>
  - Move the certificate that you just downloaded to /etc/ssl/certs/ by entering the following commands in terminal. (DO NOT RENAME THE FILE!)
-{% highlight yaml %}
+``` shell
 sudo mv ~/Downloads/uq-net-ca.pem /etc/ssl/certs/uq-net-ca.pem
-{% endhighlight %}
+```
 
 <h3> Restart wlan0 </h3>
 - Once this is done, kickstart wpa_supplicant with the following command in terminal
 
-{% highlight yaml %}
+``` shell
 sudo wpa_supplicant -i wlan0 -c /path/to/wpa_supplicant.conf -B
-{% endhighlight %}
+```
