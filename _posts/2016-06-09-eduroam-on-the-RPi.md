@@ -108,5 +108,5 @@ sudo mv ~/Downloads/uq-net-ca.pem /etc/ssl/certs/uq-net-ca.pem
 - Once this is done, kickstart wpa_supplicant with the following command in terminal
 
 ``` shell
-sudo wpa_supplicant -i wlan0 -c /path/to/wpa_supplicant.conf -B
+sudo wpa_supplicant -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf -B
 ```
