@@ -97,7 +97,7 @@ network={
 ```
 
 <h4> Getting a CA certificate </h4>
- - You should be able to get this from your university - just ask your IT department. For those of you from UQ, get the certificate here (Right click and Save Link As'): <a class="btn btn-default" href="https://db.tt/gOeycxoK">UQ CA cert</a>
+ - You should be able to get this from your university - just ask your IT department. For those of you from UQ, get the certificate here (Right click and Save Link As'): <a class="btn btn-default" href="https://www.dropbox.com/s/l33ojv3rrx3gv18/uq-net-ca.pem?dl=0">UQ CA cert</a>
  - Move the certificate that you just downloaded to /etc/ssl/certs/ by entering the following command in terminal. (DO NOT RENAME THE FILE!)
 
 ``` shell
