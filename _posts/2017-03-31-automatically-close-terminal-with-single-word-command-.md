@@ -13,7 +13,7 @@ exit
 ```
 
 into Terminal you see this:
-![Terminal 'Exit'](/assets/media/Terminal_exit.png = 500)
+{% include image name="Terminal_exit.png" caption="Terminal 'Exit'" %}
 
 No more!
 
