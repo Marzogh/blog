@@ -18,6 +18,7 @@ into Terminal you see this:
 No more!
 
 For those of you who have had enough of it as well, here's a solution.
+
 <sub>
 P.S. This is not for those of you who are not comfortable with the command line interface. You must have your terminal open and follow the following steps - changing some of the text as and when indicated.</sub>
 
