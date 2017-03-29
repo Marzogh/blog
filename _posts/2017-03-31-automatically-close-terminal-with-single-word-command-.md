@@ -13,7 +13,7 @@ exit
 ```
 
 into Terminal you see this:
-[Terminal 'Exit'](/assets/media/Terminal_exit.png)
+![Terminal 'Exit'](/assets/media/Terminal_exit.png)
 
 No more!
 
@@ -27,7 +27,7 @@ P.S. This is not for those of you who are not comfortable with the command line 
 - Click on 'Terminal' in your status bar (next to the Apple logo) and click on 'Preferences'
 - Select the 'Profiles' tab
 - Click on the dropdown menu under 'When the shell exits:' and select 'Close if the shell exited cleanly'
-[Terminal 'Preferences'](/assets/media/Terminal_pref.png)
+![Terminal 'Preferences'](/assets/media/Terminal_pref.png)
 - Close the 'Preferences' window
 - That's that. From now on, if you type exit into your terminal, not only will it exit the process, it will close the window.
 
