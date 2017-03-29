@@ -51,11 +51,11 @@ network={
     # -- USES DIFFERENT SETTINGS. IF LEFT AS IS, THESE SETTINGS --
     # -- SUPPORT MOST UNIVERSITIES - THESE SETTINGS ARE TESTED  --
     # -- TO WORK WITH THE UNIVERSITY OF QUEENSLAND, AUSTRALIA   --
-	
+
     eap=PEAP TTLS
 
     # The 'anonymous_identity' is the identity used for routing
-    # the authentication to UQ. It must end with '@uq.edu.au' and 
+    # the authentication to UQ. It must end with '@uq.edu.au' and
     # must be all lowercase. If you have anything preceding the @
     # it must be all lowercase letters or a hyphen (no spaces
     # or any other punctuation).
@@ -82,9 +82,9 @@ network={
     mode=0
     # WPA/WPA2 require OPEN
     auth_alg=OPEN
-    # WPA and WPA2 (RSN) are both used for eduroam 
+    # WPA and WPA2 (RSN) are both used for eduroam
     # (at the moment) In the future 'WPA' will be deprecated
-    # and can be removed (this will make the eduroam network WPA2 only).	
+    # and can be removed (this will make the eduroam network WPA2 only).
     proto=WPA RSN
     # CCMP (AES) is stronger, but some organisations use TKIP.
     # In the future TKIP will be dprecated and 'TKIP' can be removed.
@@ -97,7 +97,7 @@ network={
 ```
 
 <h4> Getting a CA certificate </h4>
- - You should be able to get this from your university - just ask your IT department. For those of you from UQ, get the certificate here (Right click and Save Link As'): <a class="btn btn-default" href="https://www.dropbox.com/s/l33ojv3rrx3gv18/uq-net-ca.pem?dl=0">UQ CA cert</a>
+ - You should be able to get this from your university - just ask your IT department. For those of you from UQ, get the certificate here (Right click and Save Link As'): [UQ CA cert](/assets/downloads/uq-net-ca.pem)
  - Move the certificate that you just downloaded to /etc/ssl/certs/ by entering the following command in terminal. (DO NOT RENAME THE FILE!)
 
 ``` shell
