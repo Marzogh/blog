@@ -27,7 +27,6 @@ description: Pushing the boundaries of what I can do, one line of code & one wir
 source_link:
 favicon:
 touch_icon:
-
 author:
   name: Marzogh
   email: marzogh@icloud.com
@@ -41,8 +40,9 @@ author:
 rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
-
 BASE_PATH: http://marzogh.github.io/blog
+# set it as url of an image
+# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
 
 gems:
   - jekyll-paginate
