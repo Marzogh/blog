@@ -43,3 +43,6 @@ categories_path: categories.html
 tags_path: tags.html
 
 BASE_PATH: http://marzogh.github.io/blog
+
+gems:
+  - jekyll-paginate
