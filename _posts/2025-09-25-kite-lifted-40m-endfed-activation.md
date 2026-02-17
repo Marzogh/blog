@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Kite-Lifted 40m End-Fed Activation: Field Deployment & Hard Lessons"
-date: 2026-02-18
+date: 2025-09-25
 categories: [radio, portable, antenna, tutorial]
 tags: [hf, 40m, endfed, kite, portable, grounding, field-ops]
 image: /assets/images/kite-activation/hero.jpg
