@@ -1,48 +1,68 @@
-# visit http://jekyllrb.com/docs/frontmatter/ for more settings
+# Jekyll / GitHub Pages configuration
+# Docs: https://jekyllrb.com/docs/configuration/
 
-gems: [jekyll-paginate]
-paginate: 10 # pagination based on number of posts
-paginate_path: "page:num"
-exclude: ["README.md"] # files to exclude
+# --- Core site identity ---
+
+title: "Chips'nCode Blog"
+description: "Pushing the boundaries of what I can do, one line of code & one wire at a time"
+
+# Custom domain (subdomain)
+url: "https://blog.chipsncode.com"
+baseurl: ""
+
+# --- Build behaviour ---
+
 timezone: Australia/Brisbane
-highlighter: rouge
+exclude:
+  - README.md
+
+# Markdown / highlighting
 markdown: kramdown
-disqus: chipsncode
-google_analytics:
+highlighter: rouge
 
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-defaults:
-  -
-    scope:
-      path: "" # empty string for all files
-    values:
-      title: Chips'nCode Blog
-      keywords: electronics, code, arduino, raspberry pi, SPIFlash, flash, memory, winbond, open source, DIY, maker, hacker
-### content configuration ###
+# --- Pagination ---
+paginate: 10
+paginate_path: "/page:num/"
 
-description: Pushing the boundaries of what I can do, one line of code & one wire at a time
+# --- Plugins (GitHub Pages safe) ---
+plugins:
+  - jekyll-paginate
+
+# --- Comments / analytics ---
+disqus: chipsncode
+disqus_shortname: chipsncode
+
+google_analytics:
+
+# --- Defaults / metadata ---
+
+defaults:
+  - scope:
+      path: "" # all files
+    values:
+      title: "Chips'nCode Blog"
+      keywords: "electronics, code, arduino, raspberry pi, SPIFlash, flash, memory, winbond, open source, DIY, maker, hacker"
+
+# Optional theme-specific fields (safe to leave blank)
 source_link:
 favicon:
 touch_icon:
+
+# --- Author ---
+
 author:
   name: Marzogh
   email: marzogh@icloud.com
   github: marzogh
   twitter: Marzogh_
-  #pinterest: asd123
-  #linkedin: asd123
-  bio: Jack of many trades, master of some
+  bio: "Jack of many trades, master of some"
   email_md5: 18f94b6a6b0a37ee759005c81e838e4a
 
+# --- Theme paths (legacy but used by dbyll) ---
 rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
-BASE_PATH: http://marzogh.github.io/blog
-# set it as url of an image
-# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
-
-gems:
-  - jekyll-paginate

@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
-gem 'jekyll'
 
-group :jekyll_plugins do
-  gem "jekyll-paginate"
-  gem "pygments.rb"
-end
+# Match GitHub Pages production environment exactly
+gem 'github-pages', group: :jekyll_plugins
 
+# Required for Ruby 3+
+gem 'webrick'
